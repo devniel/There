@@ -1,0 +1,11 @@
+<resources>
+
+    <string name="app_name">There</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">There</string>
+    <string name="btn_login">Entrar / Registrarse</string>
+    <string name="tb_user_hint">Usuario</string>
+    <string name="tb_password_hint">Contraseña</string>
+
+</resources>

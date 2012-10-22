@@ -21,6 +21,7 @@ connection.connect();
 
 var User = function(){
 
+	this.id = null;
 	this.username = null;
 	this.firstname = null;
 	this.lastname = null;
@@ -46,9 +47,9 @@ var User = function(){
 			self.email,
 			self.username,
 			self.password
-		], function(err, rows, fields) {
+		], function(err, result) {
 		  if (err) throw err;
-		  return fn(rows[0]);
+		  return fn(result);
 		});
 	}
 

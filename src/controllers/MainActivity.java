@@ -21,8 +21,11 @@ public class MainActivity extends Activity {
 	 * ON CREATE
 	 */
 	
+	
 	@Override
 	public void onCreate(Bundle savedInstanceState){
+		
+		Users.ctx = this;
 		
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);

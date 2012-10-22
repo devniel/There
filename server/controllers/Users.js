@@ -19,26 +19,18 @@ var Users = function(){
 
 	this.create = function(req,res,next){
 
-		var user = new User();
-		/*user.firstname = "Daniel Mauricio";
-		user.lastname = "Flores Sánchez";
-		user.facebook = null;
-		user.gender = "male";
-		user.timezone = -5;
-		user.locale = "es";
-		user.email = "dnielfs@gmail.com";
-		user.username = "devniel";
-		user.password = "dni007";
-		user.picture = null;*/
-
 		console.log(req.body);
 
-		/*user.save(function(rows){
-			console.log("FILA 0 ---> : " , rows[0]);
-			res.end("HOLA");
-		});*/
+		var user = new User();
+		user.firstname = req.body.firstname;
+		user.email = req.body.email;
+		user.username = req.body.username;
+		user.password = req.body.password;
 
-		res.end("HOLA");
+		user.save(function(u){
+			user.id = u.insertId;
+			res.end(JSON.stringify(user));
+		});
 
 		// Determinar si está invitado
 		/*if(req.body.email == "dnielfs@gmail.com"){

@@ -6,6 +6,8 @@
     <string name="title_activity_main">There</string>
     <string name="btn_login">Entrar / Registrarse</string>
     <string name="tb_user_hint">Usuario</string>
+    <string name="tb_email_hint">E-mail</string>
     <string name="tb_password_hint">Contraseña</string>
+    <string name="tb_name_hint">Nombres</string>
 
 </resources>

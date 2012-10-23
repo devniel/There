@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent" >
+    android:layout_height="match_parent"
+    android:gravity="center_vertical" >
 
     <LinearLayout
         android:id="@+id/linearLayout1"
@@ -11,28 +12,21 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="16dp"
         android:orientation="vertical" >
-
-        <TextView            android:id="@+id/textViewNombreRegistro"
+
+        <TextView
+            android:id="@+id/textViewNombreRegistro"
             android:layout_width="247dp"
             android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
             android:hint="@string/tb_nombresR_hint"
             android:textAppearance="?android:attr/textAppearanceMedium" />
-
+ 	 <requestFocus />
         <EditText
             android:id="@+id/editTextNombreRegistro"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
             android:inputType="textPersonName" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/linearLayout2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/linearLayout1"
-        android:layout_below="@+id/linearLayout1"
-        android:layout_marginTop="16dp"
-        android:orientation="vertical" >
 
         <TextView
             android:id="@+id/textViewApellidoRegistro"
@@ -45,23 +39,13 @@
             android:id="@+id/editText2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:ems="10"
             android:inputType="textPersonName" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/linearLayout3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/linearLayout2"
-        android:layout_below="@+id/linearLayout2"
-        android:layout_marginTop="15dp"
-        android:orientation="vertical" >
 
         <TextView
             android:id="@+id/textViewDNIRegistro"
             android:layout_width="246dp"
             android:layout_height="wrap_content"
-
             android:hint="@string/tb_dniR_hint"
             android:textAppearance="?android:attr/textAppearanceMedium" />
 
@@ -69,89 +53,46 @@
             android:id="@+id/editTextDNIRegistro"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="number" >
+            android:ems="10"
+            android:inputType="number" />
 
-            <requestFocus />
-        </EditText>
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/linearLayout4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/linearLayout3"
-        android:layout_alignRight="@+id/linearLayout2"
-        android:layout_below="@+id/linearLayout3"
-        android:layout_marginTop="17dp"
-        android:orientation="vertical" >
-
         <TextView
             android:id="@+id/textViewUsernameRegistro"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/tb_usernameR_hint"
             android:textAppearance="?android:attr/textAppearanceMedium" />
-
+
         <EditText
             android:id="@+id/editTextUsernameRegistro"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="text" />
+            android:ems="10"
+            android:inputType="text" >
 
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/linearLayout5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/linearLayout4"
-        android:layout_alignRight="@+id/linearLayout4"
-        android:layout_below="@+id/linearLayout4"
-        android:layout_marginTop="20dp"
-        android:orientation="vertical" >
-
+          
+        </EditText>
+
         <TextView
             android:id="@+id/textViewEmailRegistro"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/tb_emailR_hint"
             android:textAppearance="?android:attr/textAppearanceMedium" />
-
+
         <EditText
             android:id="@+id/editTextEmailRegistro"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:ems="10"
             android:inputType="textEmailAddress" />
 
-    </LinearLayout>
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/btn_registrar" />
 
-    <LinearLayout
-        android:id="@+id/linearLayout6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/linearLayout5"
-        android:layout_below="@+id/linearLayout5"
-        android:layout_marginTop="17dp"
-        android:orientation="vertical" >
     </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/linearLayout7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignRight="@+id/linearLayout5"
-        android:layout_alignTop="@+id/linearLayout6"
-        android:layout_marginRight="14dp"
-        android:orientation="vertical" >
-    </LinearLayout>
-
-    <Button
-        android:id="@+id/button1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/linearLayout6"
-        android:layout_alignRight="@+id/linearLayout3"
-        android:layout_alignTop="@+id/linearLayout7"
-        android:hint="@string/btn_registrar"/>
 
 </RelativeLayout>

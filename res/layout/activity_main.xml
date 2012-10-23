@@ -41,6 +41,7 @@
         android:layout_alignBottom="@+id/button1"
         android:hint="@string/btn_register"
         android:layout_alignRight="@+id/editText1"
+        android:onClick="goRegistrar"
          />
 
 </RelativeLayout>

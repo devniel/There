@@ -28,25 +28,13 @@ public class MainActivity extends Activity {
         return true;
     }
     
-    public void addListenerOnButton() {
-    	 
-		final Context context = this;
- 
-		button = (Button) findViewById(R.id.buttonPrincRegistrarse);
- 
-		button.setOnClickListener(new OnClickListener() {
-			
-			
-			
-			public void onClick(View arg0) {
-				System.out.println("aca");
-			    Intent intent = new Intent(context, RegistroMain.class);
-                            startActivity(intent);   
-                System.out.println("llego");
-			}
- 
-		});
-    
+  
+    /** LLama cuando se selecciona registrar */
+    public void goRegistrar(View view) {
+    	Intent intent = new Intent(this, RegistrarActivity.class);
+    	startActivity(intent);
+    	
+    }
    
 }
-    }
+    

@@ -3,39 +3,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent" >
 
-    <LinearLayout
-        android:id="@+id/linearLayout1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:orientation="vertical" >
-    </LinearLayout>
-
-    <View
-        android:id="@+id/view1"
-        android:layout_width="wrap_content"
-        android:layout_height="355dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true" />
-
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/linearLayout1"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
-        android:text="Mi pefil/Opciones/Buscar"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/view1"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="132dp"
-        android:text="Aca va el mapa"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
+ 	<com.google.android.maps.MapView
+ 	    android:id="@+id/mv_mapa" 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clickable="true"
+        android:enabled="true"
+ 	    android:apiKey="0cTayLYkzUiK0ptqEM2Wx05atzoFs3kFoUMj9Bw"
+ 	    />
 
 </RelativeLayout>

@@ -28,9 +28,8 @@ public class MainActivity extends Activity {
         return true;
     }
     
-  
-    /** LLama cuando se selecciona registrar */
-    public void goRegistrar(View view) {
+    /** Llama cuando se selecciona registrar */
+    public void btn_register_action(View view) {
     	Intent intent = new Intent(this, RegistrarActivity.class);
     	startActivity(intent);
     	

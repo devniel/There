@@ -20,5 +20,10 @@
     <string name="tb_usernameR_hint">Username:</string>
     <string name="tb_emailR_hint">Email:</string>
     <string name="btn_registrar">Registrar</string>
+    
+    <!-- Para el action bar -->
+    <string name="tab_inicio">Inicio</string>
+    <string name="tab_tag">Tags</string>
+    <string name="tab_options">Opciones</string>
 
 </resources>

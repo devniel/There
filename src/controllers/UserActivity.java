@@ -43,7 +43,7 @@ public class UserActivity extends MapActivity {
 	protected boolean isRouteDisplayed() {
 		return false;
 	}
-	
+	/*
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 	    MenuInflater inflater = getMenuInflater();
@@ -70,4 +70,8 @@ public class UserActivity extends MapActivity {
 	            return super.onOptionsItemSelected(item);
 	    }
 	}
+	*/
+	
+	
+	
 }

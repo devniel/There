@@ -22,7 +22,12 @@
         <activity
             android:name="controllers.MainActivity"
             android:label="@string/title_activity_main" >
-           
+            <!-- intent-filter primer view que mostrara -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <!-- LLeva al view Registrar -->
         <activity
@@ -33,15 +38,8 @@
         
          <!-- Activity con Google Maps -->
          <activity 
-        	
              android:label="@string/app_name"
              android:name="controllers.MActivity">
-              <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-             
          </activity>
         
         

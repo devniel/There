@@ -19,7 +19,7 @@
         android:id="@+id/tb_password"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/editText1"
+        android:layout_below="@+id/tb_user"
         android:layout_centerHorizontal="true"
         android:ems="10"
         android:hint="@string/tb_password_hint"
@@ -29,19 +29,17 @@
         android:id="@+id/btn_login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/editText1"
-        android:layout_below="@+id/editText2"
-        android:layout_marginTop="26dp"
+        android:layout_below="@+id/tb_password"
         android:text="@string/btn_login" />
-
+
     <Button
         android:id="@+id/btn_register"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/button1"
+        android:layout_alignBaseline="@+id/btn_login"
+        android:layout_alignBottom="@+id/btn_login"
+        android:layout_alignRight="@+id/tb_password"
         android:hint="@string/btn_register"
-        android:layout_alignRight="@+id/editText1"
-        android:onClick="btn_register_action"
-         />
+        android:onClick="btn_register_action" />
 
 </RelativeLayout>

@@ -2,12 +2,12 @@ package controllers;
 
 import java.util.ArrayList;
 
-import android.app.LauncherActivity.ListItem;
 import android.app.ListActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import com.softudy.there.R;
 
@@ -31,7 +31,7 @@ public class TagsActivity extends ListActivity {
 		super.onCreate(savedInstanceState);
 
 		
-		
+	/*	
 		
 		ListView listView = (ListView) findViewById(R.id.user_list_tags);
 		String[] values = new String[] { "Android", "iPhone", "WindowsMobile",
@@ -49,7 +49,25 @@ public class TagsActivity extends ListActivity {
 		listView.setAdapter(adapter); 
 		
 		setContentView(R.layout.user_tags);
+		
 
 	}
+*/
+		
+			    super.onCreate(savedInstanceState);
+			    String[] values = new String[] { "Android", "iPhone", "WindowsMobile",
+			        "Blackberry", "WebOS", "Ubuntu", "Windows7", "Max OS X",
+			        "Linux", "OS/2" };
+			    // Use your own layout
+			    ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
+			        R.layout.user_tags, R.id.label, values);
+			    setListAdapter(adapter);
+	}
+		
+	 @Override
+	  protected void onListItemClick(ListView l, View v, int position, long id) {
+	    String item = (String) getListAdapter().getItem(position);
+	    Toast.makeText(this, item + " selected", Toast.LENGTH_LONG).show();
+	  }
 
 }

@@ -60,6 +60,12 @@ public class UserActivity extends MapActivity {
 	            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
 	            startActivity(intent);
 	            return true;
+	        case R.id.menu_user_tags:
+	        	// app icon in action bar clicked; go home
+	            Intent intent_user_tags = new Intent(this, TagsActivity.class);
+	            intent_user_tags.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+	            startActivity(intent_user_tags);
+	            return true;
 	        default:
 	            return super.onOptionsItemSelected(item);
 	    }

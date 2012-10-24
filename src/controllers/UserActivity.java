@@ -1,9 +1,11 @@
 package controllers;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
+import android.view.MenuItem;
 
 import com.google.android.maps.GeoPoint;
 import com.google.android.maps.MapActivity;
@@ -47,5 +49,19 @@ public class UserActivity extends MapActivity {
 	    MenuInflater inflater = getMenuInflater();
 	    inflater.inflate(R.menu.user_menu, menu);
 	    return true;
+	}
+	
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+	    switch (item.getItemId()) {
+	        case R.id.menu_user_home:
+	            // app icon in action bar clicked; go home
+	            Intent intent = new Intent(this, UserActivity.class);
+	            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+	            startActivity(intent);
+	            return true;
+	        default:
+	            return super.onOptionsItemSelected(item);
+	    }
 	}
 }

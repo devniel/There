@@ -35,9 +35,14 @@ public class MainActivity extends Activity {
     	startActivity(intent);
     	
     }
+    
+    /*
+     * Acción a ejecutar al presionar el botón de logueo
+     */
+    
     public void btn_login_action(View view) {
     	
-    	Intent intent = new Intent(this,MActivity.class);
+    	Intent intent = new Intent(this,UserActivity.class);
     	startActivity(intent);
     }
    

@@ -36,6 +36,7 @@
             android:label="@string/app_name" >
         </activity>
 
+
         <!-- UserActivity -->
         <activity
             android:name="controllers.UserActivity"
@@ -46,6 +47,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        
+         <!-- Activity con Google Maps -->
+         <activity 
+             android:label="@string/app_name"
+             android:name="controllers.MActivity">
+         </activity>
+        
+        
     </application>
 
 </manifest>

@@ -35,6 +35,11 @@ public class MainActivity extends Activity {
     	startActivity(intent);
     	
     }
+    public void btn_login_action(View view) {
+    	
+    	Intent intent = new Intent(this,MActivity.class);
+    	startActivity(intent);
+    }
    
 }
     

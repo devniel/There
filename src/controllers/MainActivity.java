@@ -52,6 +52,8 @@ public class MainActivity extends Activity {
 			toast.show();
 		}
 		
+		Users.findById(1L);
+		
 		Button btn_register = (Button) findViewById(R.id.btn_register);
 		
 		 btn_register.setOnClickListener( new Button.OnClickListener(){

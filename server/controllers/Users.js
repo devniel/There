@@ -4,12 +4,41 @@
 
 var User = require("../models/User");
 
+var mysql      = require('mysql');
+
+var connection = mysql.createConnection({
+  host     : 'localhost',
+  user     : 'root',
+  password : 'root',
+  database : 'there'
+});
+
+connection.connect();
 
 var Users = function(){
+
+	/**
+	 *
+	 */
+
+	var findById = function(id,fn){
+		connection.query('select * from user where id = ?', id , function(err, result) {
+		  if (err) throw err;
+		  return fn(result[0]);
+		});
+	}
 
 	// CRUD
 
 	this.read = function(req,res,next){
+
+		var id = req.params.id;
+
+		findById(id,function(user){
+
+			console.log(user);
+			res.end(JSON.stringify(user));
+		});	
 
 	}
 

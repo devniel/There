@@ -40,7 +40,6 @@ var User = function(){
 		var self = this;
 
 		// MYSQL
-
 		connection.query('insert into user (firstname,lastname,email,username,password) values (?,?,?,?,?)', [
 			self.firstname,
 			self.lastname,
@@ -51,10 +50,14 @@ var User = function(){
 		  if (err) throw err;
 		  return fn(result);
 		});
+
 	}
 
 	this.findById = function(id){
-
+		connection.query('select * from user where id = ?', id , function(err, result) {
+		  if (err) throw err;
+		  return fn(result);
+		});
 	}
 
 	this.findAll = function(){

@@ -21,6 +21,7 @@ public class MainActivity extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+      
     }
 
     @Override
@@ -29,12 +30,17 @@ public class MainActivity extends Activity {
         return true;
     }
     
+    
+    
     /** Llama cuando se selecciona registrar */
     public void btn_register_action(View view) {
     	Intent intent = new Intent(this, RegistrarActivity.class);
     	startActivity(intent);
     	
     }
+    
+    
+    
     
     /*
      * Acción a ejecutar al presionar el botón de logueo

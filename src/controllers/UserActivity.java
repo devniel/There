@@ -1,11 +1,7 @@
 package controllers;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.Menu;
-import android.view.MenuInflater;
-import android.view.MenuItem;
 
 import com.google.android.maps.GeoPoint;
 import com.google.android.maps.MapActivity;
@@ -21,7 +17,7 @@ public class UserActivity extends MapActivity {
 
 	protected void onCreate(Bundle arg0) {
 		super.onCreate(arg0);
-
+		
 		Log.d("CARGANDO ", "CARGANDO ...:");
 
 		super.setContentView(R.layout.user_home);

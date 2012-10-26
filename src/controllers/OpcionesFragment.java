@@ -13,6 +13,8 @@ public class OpcionesFragment extends Fragment {
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
+		
+		
 		View myFragmentView = inflater.inflate(R.layout.tab3, container, false);
 		return myFragmentView;
 	}

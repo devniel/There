@@ -7,9 +7,6 @@ import android.app.Activity;
 import android.app.Fragment;
 import android.app.FragmentTransaction;
 import android.os.Bundle;
-import android.view.Menu;
-
-import com.softudy.there.R;
 
 
 public class TabActionBarActivity extends Activity {
@@ -24,7 +21,7 @@ public class TabActionBarActivity extends Activity {
     	 final ActionBar actionBar = getActionBar();
      
          actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
-       
+         actionBar.setDisplayHomeAsUpEnabled(true);
        
         Tab tabA = actionBar.newTab();
         tabA.setText("Inicio");

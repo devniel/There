@@ -1,17 +1,13 @@
 package controllers;
 
-import com.softudy.there.R;
-import com.softudy.there.R.layout;
-import com.softudy.there.R.menu;
-
-import android.os.Bundle;
 import android.app.Activity;
-import android.content.Context;
 import android.content.Intent;
+import android.os.Bundle;
 import android.view.Menu;
-import android.view.View.OnClickListener;
-import android.widget.Button;
 import android.view.View;
+import android.widget.Button;
+
+import com.softudy.there.R;
 
 public class MainActivity extends Activity {
 	
@@ -48,7 +44,7 @@ public class MainActivity extends Activity {
     
     public void btn_login_action(View view) {
     	
-    	Intent intent = new Intent(this,UserActivity.class);
+    	Intent intent = new Intent(this,TabActionBarActivity.class);
     	startActivity(intent);
     }
    

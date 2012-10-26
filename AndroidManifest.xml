@@ -51,14 +51,15 @@
             android:name="controllers.UserActivity"
             android:label="@string/app_name" >
         </activity>
-        
+         
+        <!-- Activity para el mostrar los tags -->
         <activity 
             android:name="controllers.TagsActivity"
             android:label="@string/app_name">
            
             
         </activity>
-        
+        <!-- Activity para el mostrar actionbar -->
         <activity 
             android:name="controllers.Container"
             android:label="@string/app_name">
@@ -67,13 +68,17 @@
             
         </activity>
         
+        <!-- Activity para el mostrar las opciones -->
         <activity 
             android:name="controllers.OpcionesActivity"
             android:label="@string/app_name">
-            		
-           
-            
         </activity>
+         
+        	<!-- Activity para el mostrar view cuenta -->
+        	<activity 
+        	    android:name="controllers.OpcionCuenta"
+        	    android:label="@string/app_name">
+        	</activity>
 		  
     </application>
 

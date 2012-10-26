@@ -54,10 +54,10 @@ public class TagsActivity extends ListActivity {
 	}
 */
 		
-			    super.onCreate(savedInstanceState);
+		
 			    String[] values = new String[] { "Android", "iPhone", "WindowsMobile",
 			        "Blackberry", "WebOS", "Ubuntu", "Windows7", "Max OS X",
-			        "Linux", "OS/2" };
+			        "Linux", "OS/2", "LA", "OP", "ZA" };
 			    // Use your own layout
 			    ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
 			        R.layout.user_tags, R.id.label, values);
@@ -67,6 +67,7 @@ public class TagsActivity extends ListActivity {
 	 @Override
 	  protected void onListItemClick(ListView l, View v, int position, long id) {
 	    String item = (String) getListAdapter().getItem(position);
+	    
 	    Toast.makeText(this, item + " selected", Toast.LENGTH_LONG).show();
 	  }
 

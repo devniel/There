@@ -8,11 +8,7 @@
     <string name="btn_register">Registrarse</string>
     <string name="tb_user_hint">Usuario</string>
     <string name="tb_password_hint">Contraseña</string>
- 
-    <!-- Submenu Usuario -->
-  	<string name="submenu_usuario_miperfil">Mi Perfil</string>
-  	<string name="submenu_usaurio_opciones">Opciones</string>
-  	<string name="submenu_usaurio_buscar">Buscar</string>    
+  
     <!-- Registro -->
     <string name="tb_nombresR_hint">Nombre(s):</string>
     <string name="tb_apellidosR_hint">Apellidos(s:)</string>
@@ -25,5 +21,25 @@
     <string name="tab_inicio">Inicio</string>
     <string name="tab_tag">Tags</string>
     <string name="tab_options">Opciones</string>
+    
+    <!-- Para el layout cuenta -->
+    <string name="cuenta_usuario">Usuario:</string>
+    <string name="cuenta_email">Email:</string>
+    <string name="cuenta_geolocalizacion">Geolocalizacion</string>
+    <string name="cuenta_geolocalizacion_publica">Publica</string>
+    <string name="cuenta_geolocalizacion_privada">Privada-Solo Contactos</string> 
+    <string name="cuenta_geolocalizacion_personalizada">Personalizada</string>
+    <string name="cuenta_idioma">Idioma</string>
+    <string name="cuenta_biografia">Biografia</string>
+    
+    
+    <!-- Para las opciones del spiner -->
+     <string-array name="idioms_array">
+        <item>Español</item>
+        <item>Ingles</item>
+        <item>Aleman</item>
+        <item>Italiano</item>
+        <item>Frances</item>
+    </string-array>
 
 </resources>

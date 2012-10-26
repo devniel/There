@@ -17,6 +17,6 @@ public class Container extends TabActivity {
        host.addTab(host.newTabSpec("tab_inicio").setIndicator("Inicio").setContent(new Intent(this, UserActivity.class)));
        host.addTab(host.newTabSpec("tab_tags").setIndicator("Tags").setContent(new Intent(this, TagsActivity.class)));
        host.addTab(host.newTabSpec("tab_opciones").setIndicator("Opciones").setContent(new Intent(this, OpcionesActivity.class)));
-   
+       
    }
 }

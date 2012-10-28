@@ -1,0 +1,128 @@
+body {
+	background : #333 !important;
+}
+
+div[data-role="page"]{
+	background: #ffd65e; /* Old browsers */
+	background: -moz-linear-gradient(top, #ffd65e 0%, #febf04 100%) !important; /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffd65e), color-stop(100%,#febf04)) !important; /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #ffd65e 0%,#febf04 100%) !important; /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #ffd65e 0%,#febf04 100%) !important; /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #ffd65e 0%,#febf04 100%) !important; /* IE10+ */
+	background: linear-gradient(top, #ffd65e 0%,#febf04 100%) !important; /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffd65e', endColorstr='#febf04',GradientType=0 ) !important; /* IE6-9 */
+}
+
+.containing-element .ui-slider-switch { width: 13em }
+
+/*
+
+div[data-role="header"] {
+	margin-bottom:20px !important;
+}
+
+form {
+	height: auto;
+	padding-bottom:4px;
+}
+
+form input ~ input{
+	display:block;
+	margin-top:7px !important;
+}
+
+form input {
+	width:300px !important;
+	margin:0 auto;
+	border-radius:5px !important;
+}
+
+form div {
+	margin-top:10px !important;
+	width:310px !important;
+	margin:0 auto;
+	border-radius:5px !important;
+}
+
+a[data-role="button"], a[data-role="button"] span {
+	border-radius:5px !important;
+	margin:0 auto;
+}
+
+a[data-role="button"]{
+	width:310px !important;
+	margin-top:10px;
+}
+
+div.ui-btn {
+	margin-top:10px !important;
+	width:310px !important;
+	margin:0 auto;
+	border-radius:5px !important;
+}
+
+
+form#f_login input#i_submit {
+	margin-top:20px;
+}
+
+
+div[data-url="search"] div[data-role="header"] {
+	margin-bottom: 0px !important;
+}
+
+div.ui-input-search {
+	width:251px !important;
+}
+
+
+div[data-url='search'] div[data-role='content'] ul.listview {
+	margin-top:50px;
+}
+*/
+
+
+
+/* FOLLOWERS */
+.followers-watching {
+	margin-top:10px;
+	margin-left:5px;
+}
+
+.follower-picture {
+	border-radius:3px;
+}
+
+.picture-min {
+	width:45px;
+	height:45px;
+}
+
+.user-info {
+	background:#EEE;
+	padding:5px;
+	border-radius:5px !important;
+	font-size:14px;
+	margin-top:10px;
+}
+
+.user-info-name {
+	font-size:18px;
+}
+
+.user-info-followers {
+	font-size:14px;	
+}
+
+.user-info img {
+	float:left;
+	margin-right:5px;
+}
+
+.user-info span{
+	display:block;
+}
+
+/*
+[data-role=page]{height: 100% !important; position:relative !important;}
+[data-role=footer]{bottom:0; position:absolute !important; top: auto !important; width:100%;} */

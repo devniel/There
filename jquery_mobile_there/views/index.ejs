@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<head>
+	<title>There</title>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="/stylesheets/style.css" />
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
+	<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
+
+	<style type="text/css">
+/*
+		body {
+			background : #333 !important;
+		}
+
+		div[data-role="header"] {
+			margin-bottom:20px !important;
+		}
+
+		form {
+			height: auto;
+			padding-bottom:4px;
+		}
+
+		form input ~ input{
+			display:block;
+			margin-top:7px !important;
+		}
+
+		form input {
+			width:300px !important;
+			margin:0 auto;
+			border-radius:5px !important;
+		}
+
+		form div {
+			margin-top:10px !important;
+			width:310px !important;
+			margin:0 auto;
+			border-radius:5px !important;
+		}
+
+		a[data-role="button"], a[data-role="button"] span {
+			border-radius:5px !important;
+			margin:0 auto;
+		}
+
+		a[data-role="button"]{
+			width:310px !important;
+			margin-top:10px;
+		}
+
+		div.ui-btn {
+			margin-top:10px !important;
+			width:310px !important;
+			margin:0 auto;
+			border-radius:5px !important;
+		}
+
+
+		form#f_login input#i_submit {
+			margin-top:20px;
+		}
+*/
+
+	</style>
+
+	<script type="text/javascript">
+
+	 $(document).ready(function() {
+
+            /*$("#f_signup-i_submit").click(function(){
+ 
+                var formData = $("#f_signup").serialize();
+ 
+                $.ajax({
+                    type: "POST",
+                    url: "/sign-up",
+                    cache: false,
+                    data: formData,
+                    success: function(data,status){
+                    	data = $.trim(data);
+                    	console.log(data);
+                    },
+                    error: function(data,status){
+
+                    }
+                });
+ 
+                return false;
+            });*/
+    });
+
+	 $(document).bind("hashchange", function(){
+		    // Anchor has changed.
+		    var hash = location.hash.replace('#','');
+		    if(hash != ''){
+		        // Show the hash if it's set
+		        alert(hash);
+
+		        // Clear the hash in the URL
+		        location.hash = '';
+		    }
+		});
+
+	</script>
+
+</head>
+<body>
+
+<div data-role="page">
+
+	<div data-role="header">
+		<h1>There</h1>
+	</div><!-- /header -->
+
+	<div data-role="content">	
+		<form id="f_signin" action="sign-in" method="post" data-ajax="false">
+			<input type="text" name="username" id="i_user" placeholder="Usuario"/>
+			<input type="password" name="password" id="i_password" placeholder="Contraseña"/>
+			<input type="submit" data-theme="b" id="i_submit" value="Entrar"/>
+		</form>
+		<a href="#register" data-role="button" data-icon="star" data-icon="info" data-theme="b">Registrarse</a>		
+	</div><!-- /content -->
+
+</div><!-- /page -->
+
+
+
+<div data-role="page" data-url="register">
+
+	<div data-role="header">
+		<h1>Moviphy</h1>
+	</div><!-- /header -->
+
+	<div data-role="content">	
+		<form id="f_signup">
+			<input type="text" name="first-name" id="i_first-name" placeholder="Nombres"/>
+			<input type="text" name="last-name" id="i_last-name" placeholder="Apellidos"/>
+			<input type="text" name="username" id="i_user" placeholder="Usuario"/>
+			<input type="email" name="email" id="i_email" placeholder="E-mail"/>
+			<input type="password" name="password" id="i_password" placeholder="Contraseña"/>
+			<input type="submit" data-theme="b" id="f_signup-i_submit" value="Regístrame"/>
+		</form>
+	</div><!-- /content -->
+
+</div><!-- /page -->
+
+</body>

@@ -6,8 +6,8 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
         android:orientation="vertical" >
 
         <TextView
@@ -18,10 +18,13 @@
             android:textAppearance="?android:attr/textAppearanceMedium" />
 
         <EditText
-            android:id="@+id/editText1"
+            android:id="@+id/editTextCuentaUsuario"
             android:layout_width="222dp"
             android:layout_height="33dp"
-            android:inputType="text" />
+            android:inputType="text" >
+
+            <requestFocus />
+        </EditText>
 
         <TextView
             android:id="@+id/cuenta_email"
@@ -31,7 +34,7 @@
             android:textAppearance="?android:attr/textAppearanceMedium" />
 
         <EditText
-            android:id="@+id/editText2"
+            android:id="@+id/editTextCuentaEmail"
             android:layout_width="222dp"
             android:layout_height="33dp"
             android:ems="10"
@@ -83,8 +86,8 @@
         <Spinner
             android:id="@+id/idiomaSpinner"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" 
-            android:entries="@array/idioms_array"/>
+            android:layout_height="wrap_content"
+            android:entries="@array/idioms_array" />
 
         <TextView
             android:id="@+id/textViewBiografia"
@@ -94,11 +97,18 @@
             android:textAppearance="?android:attr/textAppearanceMedium" />
 
         <EditText
-            android:id="@+id/editText3"
+            android:id="@+id/editTextCuentaBiografia"
             android:layout_width="match_parent"
             android:layout_height="64dp"
             android:ems="10"
             android:inputType="textMultiLine" />
+
+        <Button
+            android:id="@+id/btn_guardar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/btn_guardar"/>"
+
     </LinearLayout>
 
 </RelativeLayout>

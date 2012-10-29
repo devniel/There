@@ -31,15 +31,36 @@
     <string name="cuenta_geolocalizacion_personalizada">Personalizada</string>
     <string name="cuenta_idioma">Idioma</string>
     <string name="cuenta_biografia">Biografia</string>
-    
-    
-    <!-- Para las opciones del spiner -->
-     <string-array name="idioms_array">
-        <item>Español</item>
-        <item>Ingles</item>
-        <item>Aleman</item>
-        <item>Italiano</item>
-        <item>Frances</item>
-    </string-array>
+    <string name="btn_guardar">Guardar</string>    
+	    <!-- Para las opciones del spiner -->
+	     <string-array name="idioms_array">
+	        <item>Español</item>
+	        <item>Ingles</item>
+	        <item>Aleman</item>
+	        <item>Italiano</item>
+	        <item>Frances</item>
+	    </string-array>
+	    
+	<!-- Para el layout notificaciones -->
+	<string name="notificaciones_atributos">Atributos de Notificaiones</string> 
+	<string name="notificaciones_atributos_vibracion">Vibracion</string>  
+	<string name="notificaciones_atributos_sonido">Reproducir Sonido</string>
+	<string name="notificaciones_atributos_autorevisar">Auto-Revisar Notificaciones</string>
+	<string name="notificaciones_estado">Estado:</string>
+	<string name="notificaciones_cancelar">Cancelar</string>
+	<string name="notificaciones_guardar">Guardar</string>
+	
+	<!-- Para el layout del diseño -->
+	<string name="diseno_colorfondo">Color de Fondo:</string>
+	<string name="diseno_coloramarillo">Amarillo</string>
+	<string name="diseno_colorazul">Azul</string>
+	<string name="diseno_colorrojo">Rojo</string>
+	<string name="diseno_colorverde">Verde</string>
+	<string name="diseno_estilo">Estilos:</string>
+	<string name="diseno_estado">Estado:</string>
+	<string name="diseno_estado_personalizado">Personalizado</string>
+	<string name="diseno_cancelar">Cancelar</string>
+	<string name="diseno_aceptar">Aceptar</string>
+	
 
 </resources>

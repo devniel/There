@@ -23,7 +23,7 @@ public class OpcionesActivity extends ListActivity{
 	    public void onCreate(Bundle savedInstanceState) {
 	        super.onCreate(savedInstanceState);
 	   
-	      String[] opciones = new String[] {"Cuenta","Contraseña","Diseño","Opciones de Busqueda"};
+	      String[] opciones = new String[] {"Cuenta","Contraseña","Notificaciones","Diseño","Opciones de Busqueda"};
 	      
 	      //usando un layout
 	      ArrayAdapter<String> adapter = new ArrayAdapter<String> (this, R.layout.user_opciones,R.id.opciones, opciones);
@@ -45,8 +45,13 @@ public class OpcionesActivity extends ListActivity{
 		 else if(item=="Contraseña"){
 			 
 		 }
+		 else if(item=="Notificaciones"){
+			 Intent intent= new Intent(this,OpcionNotificaciones.class);
+			 startActivity(intent);
+		 }
 		 else if(item=="Diseño"){
-			 
+			 Intent intent = new Intent(this,OpcionDiseno.class);
+			 startActivity(intent);
 			 
 		 }
 		 else if(item=="Opciones de Busqueda"){

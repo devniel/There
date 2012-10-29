@@ -15,7 +15,9 @@ public class OpcionCuenta extends Activity {
 	public void onCreate(Bundle savedInstanceState){
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.user_opcion_cuenta);
-
+		
+		
+		
 	}
 
 }

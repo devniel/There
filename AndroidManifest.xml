@@ -74,10 +74,22 @@
             android:label="@string/app_name">
         </activity>
          
-        	<!-- Activity para el mostrar view cuenta -->
+        	<!-- Activity para mostrar configuracion cuenta -->
         	<activity 
         	    android:name="controllers.OpcionCuenta"
         	    android:label="@string/app_name">
+        	</activity>
+        	
+        	<!-- Activity para mostrar configuracion de notificaciones -->
+        	<activity 
+        	    android:name="controllers.OpcionNotificaciones"
+        	    android:label="@string/app_name">
+        	</activity>
+        	<!-- Activity para mostrar configuracion del diseño -->
+        	<activity 
+        	    android:name="controllers.OpcionDiseno"
+        	    android:label="@string/app_name">
+        	    
         	</activity>
 		  
     </application>

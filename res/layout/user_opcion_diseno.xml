@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayoutDisenoFondo"
     android:layout_width="match_parent"
     android:layout_height="match_parent" >
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:id="@+id/LinearLayoutDisenoFondo"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="22dp"
@@ -19,7 +21,7 @@
             android:textAppearance="?android:attr/textAppearanceMedium" />
 
         <RadioGroup
-            android:id="@+id/radioGroup1"
+            android:id="@+id/radioGroupColorFondo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" >
 
@@ -43,7 +45,7 @@
                 android:hint="@string/diseno_colorrojo" />
 
             <RadioButton
-                android:id="@+id/radioButtonColorVerde"
+                android:id="@+id/radioColorVerde"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:hint="@string/diseno_colorverde" />

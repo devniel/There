@@ -43,6 +43,8 @@ public class OpcionesActivity extends ListActivity{
 			 startActivity(intent);
 		 }
 		 else if(item=="Contraseña"){
+			 Intent intent= new Intent(this,OpcionContrasena.class);
+			 startActivity(intent);
 			 
 		 }
 		 else if(item=="Notificaciones"){

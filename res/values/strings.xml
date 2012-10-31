@@ -62,5 +62,10 @@
 	<string name="diseno_cancelar">Cancelar</string>
 	<string name="diseno_aceptar">Aceptar</string>
 	
-
+	<!-- Para el layout del cambio de contraseña -->
+	<string name="contrasena_antigua">Contraseña Antigua</string>
+	<string name="contrasena_nueva">Contraseña Nueva</string>
+	<string name="Contrasena_confirmar">Confirmar Contraseña</string>
+	<string name="contrasena_cancelar">Cancelar</string>
+	<string name="contrasena_aceptar">Aceptar</string>
 </resources>

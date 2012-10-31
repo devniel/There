@@ -91,6 +91,12 @@
         	    android:label="@string/app_name">
         	    
         	</activity>
+        	<!-- Activity para mostrar cambio de contrasena -->
+        	<activity 
+        	    android:name="controllers.OpcionContrasena"
+        	    android:label="@string/app_name">
+        	    
+        	</activity>
 		  
     </application>
 

@@ -32,11 +32,8 @@ public class OpcionDiseno extends Activity {
 		radio_amarillo.setOnClickListener(new OnClickListener() {
 			
 			public void onClick(View v) {
-				// TODO Auto-generated method stub
-				
+				// TODO Auto-generated method stub		
 				rl.setBackgroundColor(Color.YELLOW);
-				
-	
 			}
 		});
 		radio_azul.setOnClickListener(new OnClickListener() {
@@ -44,6 +41,7 @@ public class OpcionDiseno extends Activity {
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
 				rl.setBackgroundColor(Color.BLUE);
+				
 				
 			}
 		});
@@ -62,5 +60,4 @@ public class OpcionDiseno extends Activity {
 			}
 		});
 	}
-
 }

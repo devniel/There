@@ -1,11 +1,11 @@
 package controllers;
 
 import android.app.Activity;
+import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
-import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.RelativeLayout;
 
@@ -25,13 +25,18 @@ public class OpcionDiseno extends Activity {
 		final RadioButton radio_azul= (RadioButton) findViewById(R.id.radioColorAzul);
 		final RadioButton radio_rojo=(RadioButton) findViewById(R.id.radioColorRojo);
 		final RadioButton radio_verde=(RadioButton) findViewById(R.id.radioColorVerde);
-		
+		SharedPreferences sP = getSharedPreferences("MyPrefs", MODE_PRIVATE);
+		SharedPreferences.Editor sPeD = sP.edit();
+
 		//se crean los listeners para poder cambiar de fondo
 		radio_amarillo.setOnClickListener(new OnClickListener() {
 			
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
+				
 				rl.setBackgroundColor(Color.YELLOW);
+				
+	
 			}
 		});
 		radio_azul.setOnClickListener(new OnClickListener() {
@@ -39,6 +44,7 @@ public class OpcionDiseno extends Activity {
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
 				rl.setBackgroundColor(Color.BLUE);
+				
 			}
 		});
 		radio_rojo.setOnClickListener(new OnClickListener() {

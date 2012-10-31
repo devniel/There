@@ -19,8 +19,8 @@ import com.softudy.there.R;
 // http://stackoverflow.com/questions/7113980/add-multiple-geopoints-and-markers-automatically-in-google-maps
 public class UserActivity extends MapActivity {
 	private MapController mControl;
-	private GeoPoint geoP;
-
+	
+	
 	private MapView mv_mapa;
 	private MyLocationOverlay myLocation; 
 	
@@ -30,7 +30,7 @@ public class UserActivity extends MapActivity {
 	
 	protected void onCreate(Bundle arg0) {
 		super.onCreate(arg0);
-	
+	  
 		Log.d("CARGANDO ", "CARGANDO ...:");
 
 		super.setContentView(R.layout.user_home);
@@ -42,36 +42,38 @@ public class UserActivity extends MapActivity {
 		mv_mapa.setSatellite(true);
 		this.mControl = this.mv_mapa.getController();	
 	
-		//otra geolocalizacion
-		double latitud = -19.084742;
-		double longitud = -76.971374;
-		
 	
-		
-		this.geoP = new GeoPoint((int)(latitud*1E6), (int)(longitud*1E6));
+		//otras geolocalizaciones aparte de la tuya
+		GeoPoint geoP = new GeoPoint(-19084742, -76971374);
 		GeoPoint p1 = new GeoPoint(37423021,-122083739);
 		
+		
+		// creo un arreglo de geoPints 
+		GeoPoint [] puntos = new GeoPoint[]{geoP,p1};
+		// !! obtener los geopoints de la BD para poder asignarlos al arreglo 
+		
+		
+		//se crea una lista de Overlays 
 		List<Overlay> listOfOverlays = mv_mapa.getOverlays();
-        Drawable drawable =
+       //se crea una variable drawable para poner los markers en la posiciones
+		Drawable drawable =
             this.getResources().getDrawable(R.drawable.ic_marker2);
-
-
-        
         MyItemizedOverlay itemizedoverlay =
                 new MyItemizedOverlay(drawable, this);
-            OverlayItem overlayitem1 = new OverlayItem(
-                p1, "Hello Google!", "I'm an Android!");
-
-            //---add an overlayitem---
-            itemizedoverlay.addOverlay(overlayitem1);
-            
-            //---add the overlay---
-            listOfOverlays.add(itemizedoverlay);
-
-        mControl.animateTo(p1);
-		this.mControl.setZoom(15);
+        
+       //se crean los overlayitems con cada geopoint en el arreglo
+        for(int i =0; i<puntos.length ; i++){
+        	 OverlayItem overlayitem = new OverlayItem(
+                     puntos[i], "Hello Google!", "I'm an Android! " + i+1);
+        	 itemizedoverlay.addOverlay(overlayitem);
+        	 //---add the overlay---
+             listOfOverlays.add(itemizedoverlay);
+        }
+        
+		
 	
 		
+		//Muestra tu localizacion
 		
 		// Add the MyLocationOverlay
 		myLocation = new MyLocationOverlay(this, mv_mapa);
@@ -80,10 +82,12 @@ public class UserActivity extends MapActivity {
 		//muestra la localizacion con un marker
 		 myLocation.runOnFirstFix(new Runnable() {
 		       public void run() {
+		    	   //mueve la pantalla al marker que se desee ver
 		           mControl.animateTo(myLocation.getMyLocation());
 		       }});
 		 
-	
+		 this.mControl.setZoom(6);
+
 
 	
 	}

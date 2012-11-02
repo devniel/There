@@ -14,7 +14,7 @@ import com.softudy.there.R;
 public class TagsActivity extends ListActivity {
 	
 	
-	
+
 
 	// LIST OF ARRAY STRINGS WHICH WILL SERVE AS LIST ITEMS
 	ArrayList<String> listItems = new ArrayList<String>();
@@ -58,9 +58,10 @@ public class TagsActivity extends ListActivity {
 			    String[] values = new String[] { "Android", "iPhone", "WindowsMobile",
 			        "Blackberry", "WebOS", "Ubuntu", "Windows7", "Max OS X",
 			        "Linux", "OS/2", "LA", "OP", "ZA" };
+			    
 			    // Use your own layout
 			    ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
-			        R.layout.user_tags, R.id.label, values);
+			        R.layout.user_tags, R.id.labelTags, values);
 			    setListAdapter(adapter);
 	}
 		

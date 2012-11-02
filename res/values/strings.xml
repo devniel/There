@@ -68,4 +68,10 @@
 	<string name="Contrasena_confirmar">Confirmar Contraseña</string>
 	<string name="contrasena_cancelar">Cancelar</string>
 	<string name="contrasena_aceptar">Aceptar</string>
+	
+	
+	<!-- Colores -->
+	<color name="white">#FFFFFF</color>
+	<color name="peru">#FFCD853F</color>
+	<color name= "black">#FF000000</color>
 </resources>

@@ -64,11 +64,12 @@ public class UserActivity extends MapActivity {
        //se crean los overlayitems con cada geopoint en el arreglo
         for(int i =0; i<puntos.length ; i++){
         	 OverlayItem overlayitem = new OverlayItem(
-                     puntos[i], "Hello Google!", "I'm an Android! " + i+1);
+                     puntos[i], "Hello Google!", "I'm an Android! " + (i+1));
         	 itemizedoverlay.addOverlay(overlayitem);
         	 //---add the overlay---
              listOfOverlays.add(itemizedoverlay);
         }
+        
         
 		
 	
@@ -86,7 +87,7 @@ public class UserActivity extends MapActivity {
 		           mControl.animateTo(myLocation.getMyLocation());
 		       }});
 		 
-		 this.mControl.setZoom(6);
+		 this.mControl.setZoom(8);
 
 
 	

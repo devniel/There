@@ -34,6 +34,7 @@ app.configure('development', function(){
 });
 
 app.get('/', routes.index);
+
 app.get('/users', function(req,res,next){
   console.log("ENTERO AQUI");
 });

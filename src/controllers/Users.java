@@ -29,7 +29,7 @@ public class Users {
 			}
 		});
 		
-		hp.execute("http://192.168.49.74:3000/users/create",parameters.toString());
+		hp.execute("http://192.168.1.38:3000/users/create",parameters.toString());
 		
 		//Log.d("RESPONSE", response);
 
@@ -47,7 +47,7 @@ public class Users {
 			}
 		});
 		
-		hp.execute("http://192.168.49.74:3000/users/" + id,parameters.toString());
+		hp.execute("http://192.168.1.38:3000/users/" + id,parameters.toString());
 		//Log.d("RESPONSE", response);
 	}
 

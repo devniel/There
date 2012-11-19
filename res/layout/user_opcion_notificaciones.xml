@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:gravity="center_vertical"
+    android:id="@+id/RelativeLayoutUserOpcionNotificaciones">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="72dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textViewAtributos"
+            android:layout_width="229dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/notificaciones_atributos"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <CheckBox
+            android:id="@+id/checkBoxAtributoVibracion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/notificaciones_atributos_vibracion"/>"
+
+        <CheckBox
+            android:id="@+id/checkBoxAtributoSonido"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/notificaciones_atributos_sonido" />
+
+        <CheckBox
+            android:id="@+id/checkBoxAtributosAutorevisar"
+            android:layout_width="256dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/notificaciones_atributos_autorevisar" />
+
+        <TextView
+            android:id="@+id/textViewEstado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/notificaciones_estado"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <ToggleButton
+            android:id="@+id/toggleButtonEstado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ToggleButton" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Button
+                android:id="@+id/buttonNotificacionCancelar"
+                android:layout_width="95dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.71"
+                android:hint="@string/notificaciones_cancelar"/>"
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="117dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/notificaciones_guardar"/>"
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

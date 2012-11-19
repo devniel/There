@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:gravity="center_vertical"
+     android:id="@+id/RelativeLayoutUserOpcionCuenta">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/cuenta_usuario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/cuenta_usuario"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/editTextCuentaUsuario"
+            android:layout_width="222dp"
+            android:layout_height="33dp"
+            android:inputType="text" >
+
+            <requestFocus />
+        </EditText>
+
+        <TextView
+            android:id="@+id/cuenta_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/cuenta_email"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/editTextCuentaEmail"
+            android:layout_width="222dp"
+            android:layout_height="33dp"
+            android:ems="10"
+            android:inputType="textEmailAddress" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/cuenta_geolocalizacion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/cuenta_geolocalizacion"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <CheckBox
+                    android:id="@+id/checkBoxPublica"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/cuenta_geolocalizacion_publica" />
+
+                <CheckBox
+                    android:id="@+id/checkBoxPrivada"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/cuenta_geolocalizacion_privada" />
+
+                <CheckBox
+                    android:id="@+id/checkBoxPersonalizado"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/cuenta_geolocalizacion_personalizada" />
+            </LinearLayout>
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/textViewIdioma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/cuenta_idioma"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <Spinner
+            android:id="@+id/idiomaSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/idioms_array" />
+
+        <TextView
+            android:id="@+id/textViewBiografia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/cuenta_biografia"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/editTextCuentaBiografia"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:ems="10"
+            android:inputType="textMultiLine" />
+
+        <Button
+            android:id="@+id/btn_guardar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/btn_guardar"/>"
+
+    </LinearLayout>
+
+</RelativeLayout>

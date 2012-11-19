@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:id="@+id/RelativeLayoutRegistroMain" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textViewNombreRegistro"
+            android:layout_width="247dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:hint="@string/tb_nombresR_hint"
+            android:textAppearance="?android:attr/textAppearanceMedium">
+        	<requestFocus />
+        </TextView>
+ 	 
+        <EditText
+            android:id="@+id/editTextNombreRegistro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/textViewUsernameRegistro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/tb_usernameR_hint"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/editTextUsernameRegistro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text" >
+
+          
+        </EditText>
+
+        <TextView
+            android:id="@+id/textViewEmailRegistro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/tb_emailR_hint"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/editTextEmailRegistro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textEmailAddress" />
+        
+        <!-- PASSWORD -->
+	
+		<TextView
+            android:id="@+id/textViewPasswordRegistro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/tb_passwordR_hint"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <EditText
+            android:id="@+id/editTextPasswordRegistro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textEmailAddress" />
+        
+        <Button 
+            android:id="@+id/btn_registro_post"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/btn_registrar"/>
+        
+    </LinearLayout>
+
+</RelativeLayout>

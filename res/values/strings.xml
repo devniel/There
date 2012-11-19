@@ -4,10 +4,81 @@
     <string name="hello_world">Hello world!</string>
     <string name="menu_settings">Settings</string>
     <string name="title_activity_main">There</string>
-    <string name="btn_login">Entrar / Registrarse</string>
+    <string name="btn_login">Entrar</string>
+    <string name="btn_register">Registrarse</string>
     <string name="tb_user_hint">Usuario</string>
     <string name="tb_email_hint">E-mail</string>
     <string name="tb_password_hint">Contraseña</string>
+    <string name="tb_passwordR_hint">COntraseña</string>
+    
     <string name="tb_name_hint">Nombres</string>
+
+  
+    <!-- Registro -->
+    <string name="tb_nombresR_hint">Nombre(s):</string>
+    <string name="tb_apellidosR_hint">Apellidos(s:)</string>
+    <string name="tb_dniR_hint">D.N.I:</string>
+    <string name="tb_usernameR_hint">Username:</string>
+    <string name="tb_emailR_hint">Email:</string>
+    <string name="btn_registrar">Registrar</string>
+    
+    
+    <!-- Para el action bar -->
+    <string name="tab_inicio">Inicio</string>
+    <string name="tab_tag">Tags</string>
+    <string name="tab_options">Opciones</string>
+    
+    <!-- Para el layout cuenta -->
+    <string name="cuenta_usuario">Usuario:</string>
+    <string name="cuenta_email">Email:</string>
+    <string name="cuenta_geolocalizacion">Geolocalizacion</string>
+    <string name="cuenta_geolocalizacion_publica">Publica</string>
+    <string name="cuenta_geolocalizacion_privada">Privada-Solo Contactos</string> 
+    <string name="cuenta_geolocalizacion_personalizada">Personalizada</string>
+    <string name="cuenta_idioma">Idioma</string>
+    <string name="cuenta_biografia">Biografia</string>
+    <string name="btn_guardar">Guardar</string>    
+	    <!-- Para las opciones del spiner -->
+	     <string-array name="idioms_array">
+	        <item>Español</item>
+	        <item>Ingles</item>
+	        <item>Aleman</item>
+	        <item>Italiano</item>
+	        <item>Frances</item>
+	    </string-array>
+	    
+	<!-- Para el layout notificaciones -->
+	<string name="notificaciones_atributos">Atributos de Notificaiones</string> 
+	<string name="notificaciones_atributos_vibracion">Vibracion</string>  
+	<string name="notificaciones_atributos_sonido">Reproducir Sonido</string>
+	<string name="notificaciones_atributos_autorevisar">Auto-Revisar Notificaciones</string>
+	<string name="notificaciones_estado">Estado:</string>
+	<string name="notificaciones_cancelar">Cancelar</string>
+	<string name="notificaciones_guardar">Guardar</string>
+	
+	<!-- Para el layout del diseño -->
+	<string name="diseno_colorfondo">Color de Fondo:</string>
+	<string name="diseno_coloramarillo">Amarillo</string>
+	<string name="diseno_colorazul">Azul</string>
+	<string name="diseno_colorrojo">Rojo</string>
+	<string name="diseno_colorverde">Verde</string>
+	<string name="diseno_estilo">Estilos:</string>
+	<string name="diseno_estado">Estado:</string>
+	<string name="diseno_estado_personalizado">Personalizado</string>
+	<string name="diseno_cancelar">Cancelar</string>
+	<string name="diseno_aceptar">Aceptar</string>
+	
+	<!-- Para el layout del cambio de contraseña -->
+	<string name="contrasena_antigua">Contraseña Antigua</string>
+	<string name="contrasena_nueva">Contraseña Nueva</string>
+	<string name="Contrasena_confirmar">Confirmar Contraseña</string>
+	<string name="contrasena_cancelar">Cancelar</string>
+	<string name="contrasena_aceptar">Aceptar</string>
+	
+	
+	<!-- Colores -->
+	<color name="white">#FFFFFF</color>
+	<color name="peru">#FFCD853F</color>
+	<color name= "black">#FF000000</color>
 
 </resources>

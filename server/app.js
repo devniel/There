@@ -12,7 +12,7 @@ var express = require('express')
 
 var Users = require("./controllers/Users");
 
-var app = express();
+var app = module.exports = express();
 
 app.configure(function(){
   app.set('port', process.env.PORT || 3000);
@@ -33,15 +33,31 @@ app.configure('development', function(){
   app.use(express.errorHandler());
 });
 
+app.configure('production',function(){
+	app.use(express.logger());
+	app.use(express.errorHandler());
+});
+
+app.configure('test', function(){
+	app.use(express.errorHandler({dumpExceptions: true, showStack:true}));
+});
+
 app.get('/', routes.index);
 
 app.get('/users', function(req,res,next){
-  console.log("ENTERO AQUI");
+	res.end("Bienvenido"); 
 });
 
 app.post('/users/create', Users.create);
 app.post('/users/:id', Users.read);
 
+/*
 http.createServer(app).listen(app.get('port'), function(){
   console.log("Express server listening on port " + app.get('port'));
 });
+*/
+
+//if(!module.parent){
+	app.listen(3000);
+	
+//}

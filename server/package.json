@@ -9,6 +9,7 @@
     "express": "3.0.0rc5",
     "ejs": "*",
     "stylus": "*",
-    "mysql" : "2.0.0-alpha3"
+    "mysql" : "2.0.0-alpha3",
+    "supertest":"0.4.2"	
   }
 }
